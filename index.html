@@ -58,11 +58,14 @@
   }
   .hero-bg {
     position: absolute; inset: 0;
-    background-image: url('https://raw.githubusercontent.com/Vidyadhiraja/Frames-By-VRaj/main/IMG_3216.JPG');
-    background-size: cover;
-    background-position: center top;
-    opacity: 0.75;
     z-index: 0;
+    overflow: hidden;
+  }
+  .hero-bg img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    opacity: 0.55;
   }
   .hero::before {
     content: '';
@@ -195,7 +198,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg"><img src="https://raw.githubusercontent.com/Vidyadhiraja/Frames-By-VRaj/main/IMG_3216.JPG" alt="Malayappa Swamy"></div>
   <div class="om-symbol">🕉</div>
   <span class="hero-tag">✦ Rare Brahmotsavam & Utsava Moorthi Clicks</span>
   <h1>Malayappa Swamy<br><em>In Every Frame</em></h1>
